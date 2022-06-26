@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Translatable\Events;
+namespace LaravelRussian\Translatable\Events;
 
 class TranslationHasBeenSetEvent
 {

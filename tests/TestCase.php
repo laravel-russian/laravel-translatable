@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\Translatable\Test;
+namespace LaravelRussian\Translatable\Test;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\Translatable\TranslatableServiceProvider;
+use LaravelRussian\Translatable\TranslatableServiceProvider;
 
 abstract class TestCase extends Orchestra
 {

@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Storage;
-use Spatie\Translatable\Exceptions\AttributeIsNotTranslatable;
-use Spatie\Translatable\Facades\Translatable;
-use Spatie\Translatable\Test\TestSupport\TestModel;
+use LaravelRussian\Translatable\Exceptions\AttributeIsNotTranslatable;
+use LaravelRussian\Translatable\Facades\Translatable;
+use LaravelRussian\Translatable\Test\TestSupport\TestModel;
 
 beforeEach(function () {
     $this->testModel = new TestModel();

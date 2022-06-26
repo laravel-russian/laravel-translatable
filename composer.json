@@ -1,8 +1,8 @@
 {
-    "name": "spatie/laravel-translatable",
+    "name": "laravel-russian/laravel-translatable",
     "description": "A trait to make an Eloquent model hold translations",
     "keywords": [
-        "spatie",
+        "laravel-russian",
         "laravel-translatable",
         "translate",
         "eloquent",
@@ -10,19 +10,19 @@
         "i8n",
         "multilingual"
     ],
-    "homepage": "https://github.com/spatie/laravel-translatable",
+    "homepage": "https://github.com/laravel-russian/laravel-translatable",
     "license": "MIT",
     "authors": [
         {
             "name": "Freek Van der Herten",
-            "email": "freek@spatie.be",
-            "homepage": "https://spatie.be",
+            "email": "freek@laravel-russian.be",
+            "homepage": "https://laravel-russian.be",
             "role": "Developer"
         },
         {
             "name": "Sebastian De Deyne",
-            "email": "sebastian@spatie.be",
-            "homepage": "https://spatie.be",
+            "email": "sebastian@laravel-russian.be",
+            "homepage": "https://laravel-russian.be",
             "role": "Developer"
         }
     ],
@@ -30,7 +30,7 @@
         "php": "^8.0",
         "illuminate/database": "^9.0",
         "illuminate/support": "^9.0",
-        "spatie/laravel-package-tools": "^1.11"
+        "laravel-russian/laravel-package-tools": "^1.11"
     },
     "require-dev": {
         "mockery/mockery": "^1.4",
@@ -39,12 +39,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Translatable\\": "src"
+            "LaravelRussian\\Translatable\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Translatable\\Test\\": "tests"
+            "LaravelRussian\\Translatable\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -57,11 +57,11 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Translatable\\TranslatableServiceProvider"
+                "LaravelRussian\\Translatable\\TranslatableServiceProvider"
             ]
         },
         "aliases": {
-            "Translatable": "Spatie\\Translatable\\Facades\\Translatable"
+            "Translatable": "LaravelRussian\\Translatable\\Facades\\Translatable"
         }
     },
     "minimum-stability": "dev",

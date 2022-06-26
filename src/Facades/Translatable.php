@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\Translatable\Facades;
+namespace LaravelRussian\Translatable\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Spatie\Translatable\Translatable
+ * @see \LaravelRussian\Translatable\Translatable
  */
 class Translatable extends Facade
 {

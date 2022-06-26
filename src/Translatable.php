@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Translatable;
+namespace LaravelRussian\Translatable;
 
 use Closure;
 

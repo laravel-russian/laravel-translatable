@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Translatable;
+namespace LaravelRussian\Translatable;
 
 use Exception;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Support\Str;
-use Spatie\Translatable\Events\TranslationHasBeenSetEvent;
-use Spatie\Translatable\Exceptions\AttributeIsNotTranslatable;
+use LaravelRussian\Translatable\Events\TranslationHasBeenSetEvent;
+use LaravelRussian\Translatable\Exceptions\AttributeIsNotTranslatable;
 
 trait HasTranslations
 {
@@ -19,7 +19,7 @@ trait HasTranslations
 
     public function getAttributeValue($key): mixed
     {
-        if (! $this->isTranslatableAttribute($key)) {
+        if (!$this->isTranslatableAttribute($key)) {
             return parent::getAttributeValue($key);
         }
 
@@ -33,7 +33,7 @@ trait HasTranslations
         }
 
         // Pass arrays and untranslatable attributes to the parent method.
-        if (! $this->isTranslatableAttribute($key) || is_array($value)) {
+        if (!$this->isTranslatableAttribute($key) || is_array($value)) {
             return parent::setAttribute($key, $value);
         }
 
@@ -115,7 +115,7 @@ trait HasTranslations
         $oldValue = $translations[$locale] ?? '';
 
         if ($this->hasSetMutator($key)) {
-            $method = 'set'.Str::studly($key).'Attribute';
+            $method = 'set' . Str::studly($key) . 'Attribute';
 
             $this->{$method}($value, $locale);
 
@@ -135,7 +135,7 @@ trait HasTranslations
     {
         $this->guardAgainstNonTranslatableAttribute($key);
 
-        if (! empty($translations)) {
+        if (!empty($translations)) {
             foreach ($translations as $locale => $translation) {
                 $this->setTranslation($key, $locale, $translation);
             }
@@ -214,7 +214,7 @@ trait HasTranslations
 
     protected function guardAgainstNonTranslatableAttribute(string $key): void
     {
-        if (! $this->isTranslatableAttribute($key)) {
+        if (!$this->isTranslatableAttribute($key)) {
             throw AttributeIsNotTranslatable::make($key, $this);
         }
     }
@@ -227,7 +227,7 @@ trait HasTranslations
             return $locale;
         }
 
-        if (! $useFallbackLocale) {
+        if (!$useFallbackLocale) {
             return $locale;
         }
 
@@ -235,11 +235,11 @@ trait HasTranslations
 
         $fallbackLocale = $fallbackConfig->fallbackLocale ?? config('app.fallback_locale');
 
-        if (! is_null($fallbackLocale) && in_array($fallbackLocale, $translatedLocales)) {
+        if (!is_null($fallbackLocale) && in_array($fallbackLocale, $translatedLocales)) {
             return $fallbackLocale;
         }
 
-        if (! empty($translatedLocales) && $fallbackConfig->fallbackAny) {
+        if (!empty($translatedLocales) && $fallbackConfig->fallbackAny) {
             return $translatedLocales[0];
         }
 
@@ -260,7 +260,7 @@ trait HasTranslations
             return true;
         }
 
-        if (! in_array($locale, $allowedLocales)) {
+        if (!in_array($locale, $allowedLocales)) {
             return false;
         }
 

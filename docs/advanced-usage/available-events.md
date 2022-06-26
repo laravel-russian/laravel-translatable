@@ -3,12 +3,12 @@ title: Available events
 weight: 1
 ---
 
-Right after calling `setTranslation` the `Spatie\Translatable\Events\TranslationHasBeenSetEvent`-event will be fired.
+Right after calling `setTranslation` the `LaravelRussian\Translatable\Events\TranslationHasBeenSetEvent`-event will be fired.
 
 This is how that event looks like:
 
 ```php
-namespace Spatie\Translatable\Events;
+namespace LaravelRussian\Translatable\Events;
 
 class TranslationHasBeenSetEvent
 {

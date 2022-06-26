@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Event;
-use Spatie\Translatable\Events\TranslationHasBeenSetEvent;
-use Spatie\Translatable\Test\TestSupport\TestModel;
+use LaravelRussian\Translatable\Events\TranslationHasBeenSetEvent;
+use LaravelRussian\Translatable\Test\TestSupport\TestModel;
 
 beforeEach(function () {
     Event::fake();

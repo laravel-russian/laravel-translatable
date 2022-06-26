@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Translatable\Exceptions;
+namespace LaravelRussian\Translatable\Exceptions;
 
 use Exception;
 

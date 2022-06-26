@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Translatable\Test\TestSupport;
+namespace LaravelRussian\Translatable\Test\TestSupport;
 
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Translatable\HasTranslations;
+use LaravelRussian\Translatable\HasTranslations;
 
 class TestModel extends Model
 {
