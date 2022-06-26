@@ -30,7 +30,7 @@
         "php": "^8.0",
         "illuminate/database": "^9.0",
         "illuminate/support": "^9.0",
-        "laravel-russian/laravel-package-tools": "^1.11"
+        "spatie/laravel-package-tools": "^1.11"
     },
     "require-dev": {
         "mockery/mockery": "^1.4",

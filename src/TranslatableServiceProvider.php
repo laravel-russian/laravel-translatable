@@ -2,8 +2,8 @@
 
 namespace LaravelRussian\Translatable;
 
-use LaravelRussian\LaravelPackageTools\Package;
-use LaravelRussian\LaravelPackageTools\PackageServiceProvider;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class TranslatableServiceProvider extends PackageServiceProvider
 {
